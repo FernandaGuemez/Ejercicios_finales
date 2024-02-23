@@ -9,16 +9,12 @@ function addNumber() {
   }
 }
 // función que convierte la temperatura en °C a °F y K
-function convertTemp(gradoscelsius) {
+function convertTemp(celsius) {
   let gradosfahrenheit = (celsius * 9) / 5 + 32;
-  console.log(
-    `La temperatura ${gradoscelsius}°C es igual a ${gradosfahrenheit}°F`
-  );
+  console.log(`La temperatura ${celsius}°C es igual a ${gradosfahrenheit}°F`);
 
   let gradoskelvin = celsius + 273.15;
-  console.log(
-    `La temperatura ${gradoscelsius}°C es igual a  ${gradoskelvin} K`
-  );
+  console.log(`La temperatura ${celsius}°C es igual a  ${gradoskelvin} K`);
 }
 let number = addNumber();
 convertTemp(number);
